@@ -116,6 +116,16 @@ section {
 	box-shadow: 5px 5px 10px #606060;
 }
 
+/*============== MEDIA QUERY==================*/
+
+@media (max-width:480px) {
+
+	section {
+		bottom: 10%;
+		left: 3%;
+	}
+}
+
 
 
 
