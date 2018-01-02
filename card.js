@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 				$(".contain").css({"transform":" rotateX( -270deg )" });
 				$(".btn-open").fadeOut(700);
-				$(".btn-closed").fadeIn(700);
+				$(".btn-closed").delay(1500).fadeIn(700);
 				$(".card").delay(1500).animate({"bottom":"215"},700, 
 
 					function(){ 

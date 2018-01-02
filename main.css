@@ -30,7 +30,9 @@ section {
 	z-index: 1;
 	bottom: 0;
 	left: 2px;
-	background-color: rgb(173, 187, 187);
+	background-image: url('assets/csempe3.jpg');
+	background-size: cover;
+	background-position: center;
 	width: 396px;
 	height: 248px;
 }
@@ -39,7 +41,6 @@ section {
 	z-index: 4;
 	top: 0;
 	left: 0;
-    background-color: transparent;
     border-top: 160px solid transparent;
     border-left: 200px solid rgb(147, 147, 147);
     border-right: 200px solid  rgb(147, 147, 147);
@@ -53,13 +54,15 @@ section {
 	border-left: 200px solid transparent;
 	border-right: 200px solid transparent;
 	transition: transform 1500ms;
+	-ms-transition: transform 1500ms;
+	-webkit-transition: transform 1500ms;
 	transform-origin: top;
 }
 .tarolo {
 	position: absolute;
 	z-index: 2;
     background-color:  rgb(147, 147, 147);
-    width: 400px;
+	width: 400px;
 	top: 160px;
     height: 90px;
 }
@@ -113,10 +116,13 @@ section {
 	display: none;
 }
 .btn {
+	background-image: url('assets/csempe3.jpg');
+	background-size: cover;
+	background-position: center;
 	box-shadow: 5px 5px 10px #606060;
 }
 
-/*============== MEDIA QUERY==================*/
+/*============== MEDIA QUERY ==================*/
 
 @media (max-width:480px) {
 
