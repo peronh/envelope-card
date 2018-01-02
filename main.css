@@ -4,7 +4,7 @@
 	margin: 0;
 }
 body, html {
-	/*height: 100%;*/
+	height: 100%;
 	font-family: 'Oregano', cursive;
 }
 .layout {
@@ -14,8 +14,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
-	/*height: 100%;*/
+	height: 100%;
 }
 section {
 	position: absolute;
@@ -123,7 +122,8 @@ section {
 
 	section {
 		bottom: 10%;
-		left: 0;
+		left: -20px;
+		transform: scale(0.7);
 	}
 }
 
