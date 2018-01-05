@@ -6,6 +6,7 @@
 body, html {
 	height: 100%;
 	font-family: 'Oregano', cursive;
+	min-width: 350px;
 }
 .layout {
 	position: relative;
@@ -16,10 +17,15 @@ body, html {
 	background-size: cover;
 	height: 100%;
 }
+.card-contain {
+	position: relative;
+	width: 400px;
+	height: 250px;
+	margin: 0 auto;
+	padding-top: 400px;
+}
 section {
 	position: absolute;
-	bottom: 30%;
-	left: 38%;
 	width: 400px;
 	height: 250px;
 	background-color: rgb(174, 173, 173);
@@ -126,10 +132,21 @@ section {
 
 @media (max-width:480px) {
 
-	section {
-		bottom: 10%;
-		left: -20px;
-		transform: scale(0.7);
+	.card-contain {
+		-webkit-transform: scale(0.7);
+		-moz-transform: scale(0.7);
+		  -o-transform: scale(0.7);
+			 transform: scale(0.7);
+	}
+}
+@media (max-width:400px){
+	.card-contain {
+		margin-left: -5%;
+	}
+}
+@media (max-width:359px){
+	.card-contain {
+		margin-left: -11%;
 	}
 }
 
