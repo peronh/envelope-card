@@ -22,7 +22,7 @@ body, html {
 	width: 400px;
 	height: 250px;
 	margin: 0 auto;
-	padding-top: 400px;
+	padding-top: 300px;
 }
 section {
 	position: absolute;
@@ -92,7 +92,7 @@ section {
 .contact i {
   margin:1rem;
 }
-.btn-open {
+.btn-open, .btn-closed {
 	position: absolute;
 	z-index: 5;
 	bottom: 20px;
@@ -107,18 +107,8 @@ section {
 	font-weight: 900;
 }
 .btn-closed {
-	position: absolute;
-	z-index: 5;
 	bottom: 20px;
 	left: 85px;
-	font-size:150%;
-	letter-spacing:5px;
-	padding:10px;
-	background-color:#b8b6ba;
-	border-radius:10px;
-	cursor:pointer;
-	color:#444645;
-	font-weight: 900;
 	display: none;
 }
 .btn {
