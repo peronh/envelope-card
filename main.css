@@ -6,28 +6,34 @@
 body, html {
 	height: 100%;
 	font-family: 'Oregano', cursive;
-	min-width: 350px;
 }
 .layout {
 	position: relative;
 	background-image: url('assets/background.jpg');
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
+	display: flex;
+	flex-flow: nowrap;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+}
+.poril {
+	width: 25rem;
+	height:25rem;
 }
 .card-contain {
 	position: relative;
-	width: 400px;
-	height: 250px;
-	margin: 0 auto;
-	padding-top: 300px;
+	width: 25rem;
+	/*height: 15.63rem;*/
 }
 section {
 	position: absolute;
-	width: 400px;
-	height: 250px;
+	width: 25rem;
+	height: 15.63rem;
 	background-color: rgb(174, 173, 173);
 	box-shadow: 5px 5px 12px rgb(30, 30, 30);
 }
@@ -39,26 +45,26 @@ section {
 	background-image: url('assets/csempe3.jpg');
 	background-size: cover;
 	background-position: center;
-	width: 396px;
-	height: 248px;
+	width: 24.75rem;
+	height: 15.5rem;
 }
 .box {
 	position: absolute;
 	z-index: 4;
 	top: 0;
 	left: 0;
-    border-top: 160px solid transparent;
-    border-left: 200px solid rgb(147, 147, 147);
-    border-right: 200px solid  rgb(147, 147, 147);
+	border-top: 10rem solid transparent;
+	border-left: 12.5rem solid rgb(147, 147, 147);
+	border-right: 12.5rem solid  rgb(147, 147, 147);
 }
 .contain {
 	position: absolute;
 	z-index: 3;
-	top:0;
+	top:0.0325rem;
 	left:0;
-	border-top: 160px solid rgb(174, 173, 173);
-	border-left: 200px solid transparent;
-	border-right: 200px solid transparent;
+	border-top: 10rem solid rgb(174, 173, 173);
+	border-left: 12.5rem solid transparent;
+	border-right: 12.5rem solid transparent;
 	transition: transform 1500ms;
 	-ms-transition: transform 1500ms;
 	-webkit-transition: transform 1500ms;
@@ -67,12 +73,11 @@ section {
 .tarolo {
 	position: absolute;
 	z-index: 2;
-    background-color:  rgb(147, 147, 147);
-	width: 400px;
-	top: 160px;
-    height: 90px;
+  background-color:  rgb(147, 147, 147);
+	width: 25rem;
+	top: 10rem;
+  height: 5.625rem;
 }
-
 .contact{
 	width: 100%;
 	margin:0 auto;
@@ -89,26 +94,33 @@ section {
 	border-radius:4rem;
 	margin:4rem 0.5rem;
 }
+.contact a:hover {
+	background-color: #02080f;
+	color: #727272;
+	transform: scale(1.1);
+	transition: all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+}
 .contact i {
   margin:1rem;
 }
 .btn-open, .btn-closed {
 	position: absolute;
 	z-index: 5;
-	bottom: 20px;
-	left: 100px;
+	bottom: 1.25rem;
+	left: 6.25rem;
 	font-size:150%;
-	letter-spacing:5px;
-	padding:10px;
+	letter-spacing:0.3125rem;
+	padding:0.625rem;
 	background-color:#b8b6ba;
-	border-radius:10px;
+	border-radius:0.625rem;
 	cursor:pointer;
 	color:#444645;
 	font-weight: 900;
 }
 .btn-closed {
-	bottom: 20px;
-	left: 85px;
+	bottom: 1.25rem;
+	left: 5.313rem;
 	display: none;
 }
 .btn {
@@ -129,17 +141,26 @@ section {
 			 transform: scale(0.7);
 	}
 }
-@media (max-width:400px){
+@media (max-width:390px){
 	.card-contain {
-		margin-left: -5%;
+		margin-left: -4%;
 	}
 }
 @media (max-width:359px){
 	.card-contain {
+		margin-left: -7%;
+	}
+}
+@media (max-width:340px){
+	.card-contain {
+		margin-left: -9%;
+	}
+}
+@media (max-width:330px){
+	.card-contain {
 		margin-left: -11%;
 	}
 }
-
 
 
 
